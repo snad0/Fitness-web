@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    * {
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    body {
+        color: whitesmoke;
+        margin: 8px;
+        padding: 0px;
+        background: url('img/bg2.jpeg ');
+        height: 900px;
+    }
+
+    .left {
+
+        /* border: 2px solid red; */
+        color: whitesmoke;
+        display: inline-block;
+        position: absolute;
+        left: 70px;
+        top: 5px;
+
+
+
+
+
+    }
+    @media (min-width:1300px){
+        #l3{
+            display: none;
+        }
+
+    }
+
+    .mid {
+        /* border: 2px solid yellow; */
+        color: whitesmoke;
+        width: 40%;
+        margin: 10px auto;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        justify-content: center;
+        
+       
+
+
+    }
+
+
+    .right {
+        /* border: 2px solid blue; */
+        color: whitesmoke;
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 0px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 33px;
+
+    }
+
+    .navbar li a:hover {
+        color: grey;
+
+    }
+
+    /* .navbar li a.active{
+        
+        text-decoration: underline;
+            color: rgb(130, 130, 177);
+    } */
+    img {
+        width: 79px;
+        filter: invert(100%);
+        /*grey se white krne k lie*/
+        margin-left: px;
+        margin-top: -17px;
+
+    }
+
+    #name {
+        text-align: right;
+        margin-right: -2px;
+        margin-top: -26px;
+        color: rgb(165, 164, 164);
+    }
+
+    .btn {
+        margin: 10px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 28px;
+        cursor: pointer;
+        border-radius: 6px;
+        /* border: 1px solid black; */
+
+    }
+
+    .btn:hover {
+        background-color: rgb(58, 56, 56);
+
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 64px 11px;
+        padding: 6px 51px;
+        width: 15%;
+        border-radius: 40px;
+
+    }
+
+    .btn2 {
+        background-color: black;
+        color: whitesmoke;
+        border-radius: 6px;
+        margin: 13px 33px;
+        padding: 5px 33px;
+    }
+    .btn2:hover{
+        background-color: rgb(54, 54, 54);
+        cursor: pointer;
+    }
+    .form-group{
+        display: block;
+        margin: 2px 2px;
+        padding: 2px 1px;
+        
+    }
+    .form-group input{
+        text-align: center;
+    }
+    .label{
+        color:whitesmoke;
+        
+        font-weight: bold;
+        display: inline-block;
+        margin: 1px 18px;
+       
+    }
+    .gender{
+        color: white;
+        background-color: black;
+        /* font-weight: bold; */
+        display: inline-block;
+        margin: 3px 2px;
+        padding: 3px -2px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/favpng_logo-physical-fitness-fitness-centre.png" alt="">
+            <div id="name">Fitness hub</div>
+
+        </div>
+
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li ><a href="#">services</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+
+        </div>
+
+
+
+
+        <!-- right for button -->
+        <div class="right">
+
+            <button class="btn">Email us</button>
+            <button class="btn">sign in</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE BEST GYM IN DELHI NOW</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your number">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your email">
+            </div>
+            <div class="gender">
+                Gender: M<input type="radio" name="myGender" class="gender"> F<input type="radio" name="myGender"> Other<input type="radio" name="myGender">
+            </div>
+            <div>
+                <label for="car" class="label"> Enter city</label>
+                <!-- <select name="myCar" id="car"> -->
+                    <!-- <option value="Er">Delhi</option>  select k andar hi options dalenge -->
+                    <!-- <option value="vr">Mumbai</option> -->
+                    <!-- <option value="sw">Banglore</option> -->
+                <!-- </select> -->
+    
+            </div>
+            
+            <button class="btn2">
+                sign up
+            </button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
